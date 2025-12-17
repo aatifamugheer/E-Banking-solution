@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Need a Loan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .loan-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(90deg, rgba(255, 123, 89, 1) 0%, rgba(255, 191, 71, 1) 100%);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .loan-header h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .marquee-container {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .marquee-container a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .marquee-container a:hover {
+            text-decoration: underline;
+        }
+
+        .info-box, .form-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .form-section {
+            display: none;
+        }
+
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page Header -->
+    <div class="container mt-5">
+        <div class="loan-header">
+            <h1>Need a Loan?</h1>
+            <p>Select a loan type from the options below and apply today</p>
+        </div>
+    </div>
+
+    <!-- Loan Form and Loan Types Marquee -->
+    <div class="container">
+        <div class="row">
+            <!-- Loan Types Marquee (col-4) -->
+            <div class="col-md-4">
+                <div id="loanTypes" class="marquee-container">
+                    <h5>Select a Loan Type:</h5>
+                    <marquee behavior="scroll" direction="up" height="200px" scrollamount="2">
+                        <a onclick="showLoanForm('personalLoanForm')">Personal Loan</a><br><br>
+                        <a onclick="showLoanForm('homeLoanForm')">Home Loan</a><br><br>
+                        <a onclick="showLoanForm('autoLoanForm')">Auto Loan</a><br><br>
+                        <a onclick="showLoanForm('educationLoanForm')">Education Loan</a><br><br>
+                        <a onclick="showLoanForm('businessLoanForm')">Business Loan</a>
+                    </marquee>
+                </div>
+            </div>
+
+            <!-- Loan Application Forms and Info Box (col-8) -->
+            <div class="col-md-8">
+                <!-- Info Box -->
+                <div id="infoBox" class="info-box">
+                    <h4>Why Choose Us?</h4>
+                    <p>We offer flexible loans with quick approval and low interest rates. Apply today and secure the funds you need.</p>
+                </div>
+
+                <!-- Personal Loan Form -->
+                <div id="personalLoanForm" class="form-section">
+                    <h3>Personal Loan Application</h3>
+                    <form onsubmit="processLoanRequest('Personal Loan'); return false;">
+                        <div class="mb-3">
+                            <label for="personalFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="personalFullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personalIncome" class="form-label">Annual Income</label>
+                            <input type="number" class="form-control" id="personalIncome" placeholder="Enter your annual income" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personalLoanAmount" class="form-label">Loan Amount</label>
+                            <input type="number" class="form-control" id="personalLoanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Home Loan Form -->
+                <div id="homeLoanForm" class="form-section">
+                    <h3>Home Loan Application</h3>
+                    <form onsubmit="processLoanRequest('Home Loan'); return false;">
+                        <div class="mb-3">
+                            <label for="homeFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="homeFullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="homeAddress" class="form-label">Home Address</label>
+                            <input type="text" class="form-control" id="homeAddress" placeholder="Enter your home address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="homeLoanAmount" class="form-label">Loan Amount</label>
+                            <input type="number" class="form-control" id="homeLoanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Auto Loan Form -->
+                <div id="autoLoanForm" class="form-section">
+                    <h3>Auto Loan Application</h3>
+                    <form onsubmit="processLoanRequest('Auto Loan'); return false;">
+                        <div class="mb-3">
+                            <label for="autoFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="autoFullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="carModel" class="form-label">Car Model</label>
+                            <input type="text" class="form-control" id="carModel" placeholder="Enter car model" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="autoLoanAmount" class="form-label">Loan Amount</label>
+                            <input type="number" class="form-control" id="autoLoanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Education Loan Form -->
+                <div id="educationLoanForm" class="form-section">
+                    <h3>Education Loan Application</h3>
+                    <form onsubmit="processLoanRequest('Education Loan'); return false;">
+                        <div class="mb-3">
+                            <label for="educationFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="educationFullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="educationInstitution" class="form-label">Institution Name</label>
+                            <input type="text" class="form-control" id="educationInstitution" placeholder="Enter institution name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="educationLoanAmount" class="form-label">Loan Amount</label>
+                            <input type="number" class="form-control" id="educationLoanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </form>
+                </div>
+
+                <!-- Business Loan Form -->
+                <div id="businessLoanForm" class="form-section">
+                    <h3>Business Loan Application</h3>
+                    <form onsubmit="processLoanRequest('Business Loan'); return false;">
+                        <div class="mb-3">
+                            <label for="businessFullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="businessFullName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="businessName" class="form-label">Business Name</label>
+                            <input type="text" class="form-control" id="businessName" placeholder="Enter your business name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="businessRevenue" class="form-label">Annual Revenue</label>
+                            <input type="number" class="form-control" id="businessRevenue" placeholder="Enter your annual revenue" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="businessLoanAmount" class="form-label">Loan Amount</label>
+                            <input type="number" class="form-control" id="businessLoanAmount" placeholder="Enter loan amount" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle form display and loan submission alert -->
+    <script>
+        // Function to show the selected loan form and hide the info box
+        function showLoanForm(loanFormId) {
+            // Hide the info box
+            document.getElementById('infoBox').style.display = 'none';
+
+            // Hide all forms
+            var loanForms = document.getElementsByClassName('form-section');
+            for (var i = 0; i < loanForms.length; i++) {
+                loanForms[i].style.display = 'none';
+            }
+
+            // Show the selected form
+            document.getElementById(loanFormId).style.display = 'block';
+        }
+
+        // Function to process loan request and show alert
+        function processLoanRequest(loanType) {
+            alert(loanType + ' request has been processed successfully!');
+        }
+    </script>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Solutions - E-Banking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Hero Section */
+    .hero-investment {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-investment h1 {
+      font-weight: bold;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    /* Benefits Section */
+    .benefits {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+
+    .benefit-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .benefit-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Investment Plans */
+    .investment-plans {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 60px 0;
+      color: white;
+    }
+
+    /* Progress Bars */
+    .progress {
+      height: 20px;
+      background-color: #e9ecef;
+      border-radius: 10px;
+    }
+
+    .progress-bar {
+      font-weight: bold;
+    }
+
+    /* Carousel */
+    .investment-carousel .carousel-item {
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Animation */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-investment">
+  <div class="container">
+    <h1 class="display-4">Investment Solutions</h1>
+    <p class="lead">Empower your financial future with our diverse range of investment options.</p>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Us?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="benefit-box text-center">
+          <h5>Expert Guidance</h5>
+          <p>Get advice from our experienced financial experts.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="benefit-box text-center">
+          <h5>Flexible Plans</h5>
+          <p>Investment plans tailored to meet your goals.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="benefit-box text-center">
+          <h5>High Returns</h5>
+          <p>Maximize your returns with our strategic investment solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Investment Plans Section -->
+<section class="investment-plans">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Investment Plans</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 75%">Equity Funds 75%</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 60%">Mutual Funds 60%</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 50%">Fixed Deposits 50%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section with Carousel -->
+<section class="investment-carousel py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center">
+            <blockquote class="blockquote text-center">
+              <p>"Their investment plans have helped me achieve my financial goals seamlessly."</p>
+              <footer class="blockquote-footer">John Doe</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <blockquote class="blockquote text-center">
+              <p>"Outstanding service and amazing returns on my investments!"</p>
+              <footer class="blockquote-footer">Jane Smith</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <blockquote class="blockquote text-center">
+              <p>"Highly recommended for anyone looking to grow their wealth."</p>
+              <footer class="blockquote-footer">Alex Johnson</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

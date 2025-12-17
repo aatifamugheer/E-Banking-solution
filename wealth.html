@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wealth Management - E-Banking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Hero Section */
+    .hero-wealth {
+      background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-wealth h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 60px 0;
+      background: #f7f8fa;
+    }
+
+    .service-item {
+      background: linear-gradient(135deg, #FFD194, #BC4E9C);
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      background: linear-gradient(135deg, #43C6AC, #191654);
+      color: white;
+      padding: 60px 0;
+    }
+
+    .testimonial-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Call to Action Section */
+    .cta {
+      background: linear-gradient(135deg, #F3904F, #3B4371);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    /* Animation */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-wealth">
+  <div class="container">
+    <h1>Wealth Management Solutions</h1>
+    <p class="lead">Plan your future with confidence. Our experts are here to guide you.</p>
+    <a href="#services" class="btn btn-light btn-lg mt-3">Explore Services</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Wealth Management Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-item">
+          <h5>Investment Planning</h5>
+          <p>Tailored investment strategies to help you achieve your financial goals.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h5>Retirement Planning</h5>
+          <p>Secure your future with comprehensive retirement plans designed just for you.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item">
+          <h5>Wealth Protection</h5>
+          <p>Safeguard your assets with advanced wealth protection strategies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Clients Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-item">
+          <p>"Their investment advice helped me grow my portfolio significantly. Highly recommend!"</p>
+          <h6>- John Doe</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-item">
+          <p>"Planning for retirement was never this easy. Their experts are the best!"</p>
+          <h6>- Sarah Lee</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-item">
+          <p>"I feel secure knowing my wealth is protected with their reliable strategies."</p>
+          <h6>- Michael Smith</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta">
+  <div class="container">
+    <h2>Start Your Wealth Journey Today</h2>
+    <p>Let us help you achieve your financial aspirations. Contact us now for a consultation.</p>
+    <a href="#" class="btn btn-warning btn-lg mt-3">Get Started</a>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

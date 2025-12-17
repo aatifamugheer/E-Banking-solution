@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit & Debit Cards - E-Banking</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Hero Section */
+    .hero-cards {
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero-cards h1 {
+      font-weight: bold;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    /* Card Features Section */
+    .features {
+      padding: 60px 0;
+      background: #f8f9fa;
+    }
+
+    .feature-item {
+      background: #fff;
+      border-left: 5px solid #007BFF;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Card Types Section */
+    .card-types {
+      background: linear-gradient(135deg, #FFC371, #FF5F6D);
+      padding: 60px 0;
+      color: white;
+    }
+
+    .card-display {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+    }
+
+    .gold-card {
+      background-image: url('https://example.com/gold-card.jpg');
+    }
+
+    .platinum-card {
+      background-image: url('https://example.com/platinum-card.jpg');
+    }
+
+    .debit-card {
+      background-image: url('https://example.com/debit-card.jpg');
+    }
+
+    /* Application Process */
+    .apply-section {
+      background: #f1f1f1;
+      padding: 60px 0;
+    }
+
+    /* Animation */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero-cards">
+  <div class="container">
+    <h1 class="display-4">Credit & Debit Cards</h1>
+    <p class="lead">Experience the power of convenience with our range of cards tailored to your needs.</p>
+    <a href="#apply" class="btn btn-warning btn-lg mt-3">Apply Now</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="container">
+    <h2 class="text-center mb-5">Why Choose Our Cards?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Zero Annual Fees</h5>
+          <p>No annual fees on all cards for the first year.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Global Acceptance</h5>
+          <p>Use your card anywhere in the world at millions of locations.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Reward Points</h5>
+          <p>Earn points on every purchase and redeem exciting rewards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Card Types Section -->
+<section class="card-types">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Card Types</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card-display gold-card"></div>
+        <h5 class="mt-3 text-center">Gold Credit Card</h5>
+        <p class="text-center">Ideal for everyday purchases with exclusive rewards.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card-display platinum-card"></div>
+        <h5 class="mt-3 text-center">Platinum Credit Card</h5>
+        <p class="text-center">Premium benefits and higher limits for premium users.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card-display debit-card"></div>
+        <h5 class="mt-3 text-center">Debit Card</h5>
+        <p class="text-center">Access your funds instantly with enhanced security.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Application Process -->
+<section class="apply-section" id="apply">
+  <div class="container">
+    <h2 class="text-center mb-5">How to Apply</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Step 1: Choose Your Card</h5>
+          <p>Select the best card that suits your financial goals.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Step 2: Fill the Application</h5>
+          <p>Provide your details in our secure online form.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-item">
+          <h5>Step 3: Get Approved</h5>
+          <p>Receive your card within 5-7 business days after approval.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

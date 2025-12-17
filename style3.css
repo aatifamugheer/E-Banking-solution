@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    /* height: 30px; */
+    font-size: 13px;
+}
+/* .navbar .container .nav-item{
+    color:red
+} */
+.container-fluid .welcome{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.container-fluid #search{
+    margin-top: 12px;
+}
+.container-fluid #button{
+    margin-top: 12px;
+    /* margin-left: 40px; */
+}
+.container .d-flex{
+    /* height: 30px; */
+}
+.container .d-flex .btn{
+    width: 200px;
+    float: right;
+}
+.hero {
+    /* background-image: url('https://example.com/your-background-image.jpg');  */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero-content {
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+.quick-links {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.quick-link-icon {
+    font-size: 40px;
+    color: #004080;
+    margin-bottom: 20px;
+}
+.quick-link-card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+.quick-link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.featured-services {
+    padding: 60px 0;
+    width: 100%;
+    background-color: #fff;
+}
+.featured-card {
+    transition: 0.3s;
+}
+.featured-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.featured-image {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+#heroCarousel img{
+    height: 500px;
+    width: 1300px;
+    object-fit: cover;
+}
+
+.news-insights {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+
+.news-insights h2 {
+    color: #343a40;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.news-insights h2:after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.custom-accordion-item {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.custom-accordion-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+.custom-accordion-btn:hover, .custom-accordion-btn:focus {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+.custom-accordion-body {
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #343a40;
+    border-top: 2px solid #007bff;
+}
+
+
+.custom-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.news-ticker {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+marquee {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+
+marquee a {
+    color: #f8f9fa;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+marquee a:hover {
+    color: #cce5ff;
+}
+.cta-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+/* Column 1: Open an Account */
+.cta-box-1 {
+    height: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.cta-box-1:hover {
+    transform: scale(1.05);
+}
+.cta-box-1 .cta-btn-1{
+    margin-top: 5px;
+}
+ /* Column 2: Apply for a Loan */
+ .cta-box-2 {
+    height: 250px;
+    background-color: #28a745;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.cta-box-2:hover {
+    transform: scale(1.05);
+}
+
+/* Column 3: Download the App */
+.cta-box-3 {
+    height: 250px;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.cta-box-3:hover {
+    transform: scale(1.05);
+}
+
+.cta-btn {
+    margin-top: 40px;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.cta-btn-1 {
+    background-color: #0056b3;
+}
+
+.cta-btn-2 {
+    background-color: #218838;
+}
+
+.cta-btn-3 {
+    background-color: #ff6f61;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 40px 0;
+}
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+.social-icons a.facebook {
+    color: #4267B2; /* Facebook color */
+}
+.social-icons a.twitter {
+    color: #1DA1F2; /* Twitter color */
+}
+.social-icons a.linkedin {
+    color: #0077B5; /* LinkedIn color */
+}
+.social-icons a.instagram {
+    color: #C13584; /* Instagram color */
+}
+.social-icons a:hover {
+    opacity: 0.8;
+}
+.newsletter-input {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+}
+.newsletter-btn {
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.newsletter-btn:hover {
+    background-color: #0056b3;
+}
